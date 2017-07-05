@@ -1,1 +1,148 @@
-/* Styles goes Here */
+/*-----------------Common Styling--------------------*/
+body{
+	background-color: #f7f9fc;
+	font-family: 'Lato', sans-serif;
+}
+
+.content-fluid{
+	max-width: 954px;
+	margin:auto;
+}
+
+img{
+	width:100%;
+}
+
+a{
+	text-decoration:none;
+}
+
+p{
+	color:#333;
+}
+
+/*---------------Header Styling---------------------*/
+.header-wrapper{
+	text-align: right;
+	padding-top:78px;
+	padding-bottom: 78px;
+}
+
+.site-logo{
+	font-size: 42px;
+	font-weight: 900;
+	color:#333333;
+	font-style: italic;
+	float:left;
+	clear:both;
+}
+
+.navigation{
+	display: inline-block;
+
+}
+
+.navigation ul li{
+	display: inline-block;
+	margin-right:34px;
+}
+
+.navigation ul li a{
+	list-style-type: none;
+	text-decoration:none;
+	font-size:16px;
+	font-weight: 900;
+	color:#333;
+}
+
+.navigation ul li:last-child{
+	margin-right:0;
+}
+
+
+/*--------------Main Section Styling----------------*/
+.article{
+    padding: 58px 94px;
+    padding-bottom:110px;
+    background-color: #fff;
+    margin-bottom:50px;
+    box-shadow:0 -2px 20px 3px rgba(0,0,0,0.1),0 5px 31px 0 rgba(0,0,0,0.1) !important;
+    position: relative
+}
+
+.article.block-observe ,.article.block-video{
+	padding:0;
+}
+
+.article.block-travel {
+	padding-top:0;
+}
+
+.content-wrapper{
+	padding: 0px 94px;
+    padding-bottom:110px;
+}
+
+.quote{
+	margin:0;
+	margin-bottom:50px;
+}
+.date-wrapper{
+	position: relative;
+    padding: 50px 0px 25px;
+}
+.date{
+	color: #bdbdbd;
+    font-size: 14px;
+    font-weight: 900;
+    display: inline-block;
+    width: 92px;
+}
+
+.panel-blue{
+	background-color: #5c6bc0;
+    padding: 12px;
+    width: 94px;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    right: -108px;
+    top: 20px;
+}
+
+.panel-heading{
+	font-size:40px;
+	font-weight: 800;
+	margin-top:0;
+}
+
+.panel-content{
+	color:#414141;
+	font-size:17px;
+	padding-top:42px;
+	padding-bottom:56px;
+	border-top:1px solid #eeeeee;
+}
+
+.read-more{
+	color:#5c6bc0;
+	font-size:21px;
+	font-weight: 800;
+	display: block;
+	float:left;
+	clear:both;
+}
+
+.signature{
+	display: block;
+    width: 30%;
+    float: right;
+    text-align: right;
+}
+
+.signature a{
+	color:#b2b2b2;
+}
+
+/*---------------Footer Styling---------------------*/
+
