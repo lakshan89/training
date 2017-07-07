@@ -155,3 +155,33 @@ article{
     line-height: 38px;
     margin: 0;
 }
+
+.image-top-left{
+    position: relative;
+    left: 10px;
+    top: 10px;
+    float: left;
+}
+
+.image-top-right{
+    float: right;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    width: 465px;
+    height: 330px;
+}
+
+.image-bottom-left{
+	float: left;
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+
+.image-bottom-right{
+	float: right;
+    position: relative;
+    left: 8px;
+    top: 10px;
+}
