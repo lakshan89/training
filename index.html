@@ -4,8 +4,10 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="/css/styles.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
 
 </head>
 <body>
@@ -23,14 +25,14 @@
 			<h1>Palo Alto</h1>
 		</div>
 
-		<div id="nav-bar">
+		<div id="nav-bar" class="pull-right">
 			<nav>
-				<a href="#">HOME</a>
+				<a class="home" href="#">HOME</a>
 				<a href="#">ABOUT</a>
-				<a href="#">ARCHIVE</a>
+				<a href="#" class="active">ARCHIVE</a>
 				<a href="#">CONTACT</a>
 				<a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
-				<a href="#" class="burger-icon"><i class="fa fa-bars" aria-hidden="true"></i></a>
+				<!-- <a href="#" class="burger-icon"><i class="fa fa-bars" aria-hidden="true"></i></a> -->
 			</nav>
 		</div>
 
@@ -42,31 +44,30 @@
 		<article class="article-1">
 
 				<div class="category">
-					<p>I Do Travel</p>
+					<span>I Do Travel</span>
 				</div>
+				<div class="main-content">
+					<div class="article-date">
+						<span>Sep 20</span>
+					</div>
 
-				<div class="article-date">
-					<p>Sep 20</p>
-				</div>
+					<div class="article-title">
+						<h1>No difference how many peaks you reach if there was no pleasure in the climb.</h1>
+					</div>
 
-				<div class="article-title">
-					<h1>No difference how many peaks you reach if there was no pleasure in the climb.</h1>
-				</div>
+					<div class="article-content">
+						<p>Quisque congue lacus mattis massa luctus, nec hendrerit purus aliquet. Ut ac elementum urna. Pellentesque suscipit metus et egestas congue. Duis eu pellentesque turpis, ut maximus metus. Sed ultrices tellus vitae rutrum congue. Fusce luctus augue id nisl suscipit, vel sollicitudin orci egestas. Morbi posuere venenatis ipsum, ac vestibulum quam dignissim efficitur. Ut vitae rutrum augue, in volutpat quam. Cras a viverra ipsum. Aenean ut consequat ex, vitae vulputate nunc. Vestibulum metus nisi, aliquam sed tincidunt sit amet, pretium et augue.</p>
+					</div>
 
-				<hr>
+					<div class="read-more pull-left">
+						<a href="#">READ MORE</a>
+					</div>
 
-				<div class="article-content">
-					<p>Quisque congue lacus mattis massa luctus, nec hendrerit purus aliquet. Ut ac elementum urna. Pellentesque suscipit metus et egestas congue. Duis eu pellentesque turpis, ut maximus metus. Sed ultrices tellus vitae rutrum congue. Fusce luctus augue id nisl suscipit, vel sollicitudin orci egestas. Morbi posuere venenatis ipsum, ac vestibulum quam dignissim efficitur. Ut vitae rutrum augue, in volutpat quam. Cras a viverra ipsum. Aenean ut consequat ex, vitae vulputate nunc. Vestibulum metus nisi, aliquam sed tincidunt sit amet, pretium et augue.</p>
-				</div>
-
-				<div class="read-more">
-					<a href="#">READ MORE</a>
-				</div>
-
-				<div class="article-tags">
-					<a href="#">#Yosemite</a>
-					<a href="#">#Peak</a>
-					<a href="#">#Explorer</a>	
+					<div class="article-tags pull-right">
+						<a href="#">#Yosemite</a>
+						<a href="#">#Peak</a>
+						<a href="#">#Explorer</a>	
+					</div>
 				</div>
 
 		</article>
@@ -74,39 +75,38 @@
 		<article  class="article-2">
 
 				<div class="article-image">
-					<a href="http://placeholder.com"><img src="http://via.placeholder.com/956x534"></a>
+					<img src="/images/post2-img.png">
 				</div>
 
 				<div class="category">
-					<p>I Do Observe</p>
+					<span>I Do Observe</span>
 				</div>
+				<div class="main-content">
+					<div class="article-date">
+						<span>Sep 18</span>
+					</div>
 
-				<div class="article-date">
-					<p>Sep 18</p>
-				</div>
+					<div class="article-title">
+						<h1>You know, I'd rather argue with you, then laugh with anyone else. </h1>
+					</div>
 
-				<div class="article-title">
-					<h1>You know, I'd rather argue with you, then laugh with anyone else. </h1>
-				</div>
+					<div class="article-content">
+						<blockquote>Curabitur luctus placerat lorem id eleifend. Nulla ac lacus finibus, tempor velit hendrerit, vulputate lacus. Nunc fermentum nunc sem, ac eleifend tellus cursus nec. Donec a euismod est, vitae accumsan purus. Proin aliquet ex massa, ac finibus magna commodo vitae. </blockquote>
 
-				<hr>
+						<p>Quisque congue lacus mattis massa luctus, nec hendrerit purus aliquet. Ut ac elementum urna. Pellentesque suscipit metus et egestas congue. Duis eu pellentesque turpis, ut maximus metus. Sed ultrices tellus vitae rutrum congue. Fusce luctus augue id nisl suscipit, vel sollicitudin orci egestas. Morbi posuere venenatis ipsum, ac vestibulum quam dignissim efficitur. Ut vitae rutrum augue, in volutpat quam. Cras a viverra ipsum. Aenean ut consequat ex, vitae vulputate nunc. Vestibulum metus nisi, aliquam sed tincidunt sit amet, pretium et augue.</p>
 
-				<div class="article-content">
-					<blockquote>Curabitur luctus placerat lorem id eleifend. Nulla ac lacus finibus, tempor velit hendrerit, vulputate lacus. Nunc fermentum nunc sem, ac eleifend tellus cursus nec. Donec a euismod est, vitae accumsan purus. Proin aliquet ex massa, ac finibus magna commodo vitae. </blockquote>
+						<p>Sed sagittis commodo dolor. Vivamus elementum sem sed sapien bibendum viverra. Curabitur semper scelerisque turpis eu ullamcorper. Morbi tincidunt auctor orci id consequat. Nulla odio mi, iaculis id congue quis, euismod id nisi. In varius congue diam, et viverra lorem bibendum ut.</p>
+					</div>
 
-					<p>Quisque congue lacus mattis massa luctus, nec hendrerit purus aliquet. Ut ac elementum urna. Pellentesque suscipit metus et egestas congue. Duis eu pellentesque turpis, ut maximus metus. Sed ultrices tellus vitae rutrum congue. Fusce luctus augue id nisl suscipit, vel sollicitudin orci egestas. Morbi posuere venenatis ipsum, ac vestibulum quam dignissim efficitur. Ut vitae rutrum augue, in volutpat quam. Cras a viverra ipsum. Aenean ut consequat ex, vitae vulputate nunc. Vestibulum metus nisi, aliquam sed tincidunt sit amet, pretium et augue.</p>
+					<div class="read-more pull-left">
+						<a href="#">READ MORE</a>
+					</div>
 
-					<p>Sed sagittis commodo dolor. Vivamus elementum sem sed sapien bibendum viverra. Curabitur semper scelerisque turpis eu ullamcorper. Morbi tincidunt auctor orci id consequat. Nulla odio mi, iaculis id congue quis, euismod id nisi. In varius congue diam, et viverra lorem bibendum ut.</p>
-				</div>
-
-				<div class="read-more">
-					<a href="#">READ MORE</a>
-				</div>
-
-				<div class="article-tags">
-					<a href="#">#Yosemite</a>	
-					<a href="#">#Peak</a>	
-					<a href="#">#Photo</a>	
+					<div class="article-tags pull-right">
+						<a href="#">#Yosemite</a>	
+						<a href="#">#Peak</a>	
+						<a href="#">#Photo</a>	
+					</div>
 				</div>
 
 		</article>
@@ -132,28 +132,26 @@
 				</div>
 
 				<div class="category">
-					<p>I Do Photos</p>
+					<span>I Do Photos</span>
 				</div>
 
 				<div class="article-date">
-					<p>Sep 14</p>
+					<span>Sep 14</span>
 				</div>
 
 				<div class="article-title">
 					<h1>Everything in the universe has a rhythm, everything dances.</h1>
 				</div>
 
-				<hr>
-
 				<div class="article-content">
 					<p>Donec hendrerit magna vitae metus viverra tincidunt. Cras dolor lacus, placerat sed nulla in, egestas pharetra neque. Sed sit amet aliquet erat. Integer nec mi convallis, condimentum odio quis, pharetra tellus. Donec mollis libero in volutpat luctus. Cras laoreet pulvinar dapibus. Nulla laoreet odio at nunc semper vestibulum. Sed magna mauris, molestie eu ipsum et, pharetra egestas neque.</p>
 				</div>
 
-				<div class="read-more">
+				<div class="read-more pull-left">
 					<a href="#">READ MORE</a>
 				</div>
 
-				<div class="article-tags">
+				<div class="article-tags pull-right">
 					<a href="#">#Yosemite</a>
 					<a href="#">#Photo</a>
 					<a href="#">#Hi-res</a>
@@ -168,21 +166,22 @@
 				</div>
 
 				<div class="category">
-					<p>I Do Watch</p>
+					<span>I Do Watch</span>
 				</div>
+				<div class="main-content">
+					<div class="article-date">
+						<span>Sep 14</span>
+					</div>
 
-				<div class="article-date">
-					<p>Sep 14</p>
-				</div>
+					<div class="article-title">
+						<h1>As human beings, we have a natural compulsion to fill empty spaces.</h1>
+					</div>
 
-				<div class="article-title">
-					<h1>As human beings, we have a natural compulsion to fill empty spaces.</h1>
-				</div>
-
-				<div class="article-tags">
-					<a href="#">#Yosemite</a>
-					<a href="#">#Peak</a>
-					<a href="#">#Photo</a>				
+					<div class="article-tags pull-left">
+						<a href="#">#Yosemite</a>
+						<a href="#">#Peak</a>
+						<a href="#">#Photo</a>				
+					</div>
 				</div>
 
 		</article>
@@ -190,15 +189,16 @@
 		<article class="article-5">
 
 				<div class="category">
-					<p>I Do Quote</p>
+					<span>I Do Quote</span>
 				</div>
+				<div class="main-content">
+					<div class="article-quote">
+						<blockquote>There is always something left to love. And if you ain’t learned that, you ain’t learned nothing.</blockquote>
+					</div>
 
-				<div class="article-quote">
-					<blockquote>There is always something left to love. And if you ain’t learned that, you ain’t learned nothing.</blockquote>
-				</div>
-
-				<div class="article-quote-user">
-					<p>— Lorraine Hansberry</p>
+					<div class="article-quote-user">
+						<span>— Lorraine Hansberry</span>
+					</div>
 				</div>
 
 		</article>
@@ -210,27 +210,26 @@
 				</div>
 
 				<div class="category">
-					<p>I Do Listen</p>
+					<span>I Do Listen</span>
 				</div>
+				<div class="main-content">
+					<div class="article-date">
+						<span>Sep 14</span>
+					</div>
 
-				<div class="article-date">
-					<p>Sep 14</p>
-				</div>
+					<div class="article-title">
+						<h1>Music was my refuge. I could crawl into the space between the notes and curl my back to loneliness.</h1>
+					</div>
 
-				<div class="article-title">
-					<h1>Music was my refuge. I could crawl into the space between the notes and curl my back to loneliness.</h1>
-				</div>
+					<div class="article-content">
+						<p>Donec hendrerit magna vitae metus viverra tincidunt. Cras dolor lacus, placerat sed nulla in, egestas pharetra neque. Sed sit amet aliquet erat. Integer nec mi convallis, condimentum odio quis, pharetra tellus. Donec mollis libero in volutpat luctus. Cras laoreet pulvinar dapibus. Nulla laoreet odio at nunc semper vestibulum. Sed magna mauris, molestie eu ipsum et, pharetra egestas neque.</p>
+					</div>
 
-				<hr>
-
-				<div class="article-content">
-					<p>Donec hendrerit magna vitae metus viverra tincidunt. Cras dolor lacus, placerat sed nulla in, egestas pharetra neque. Sed sit amet aliquet erat. Integer nec mi convallis, condimentum odio quis, pharetra tellus. Donec mollis libero in volutpat luctus. Cras laoreet pulvinar dapibus. Nulla laoreet odio at nunc semper vestibulum. Sed magna mauris, molestie eu ipsum et, pharetra egestas neque.</p>
-				</div>
-
-				<div class="article-tags">
-					<a href="#">#Weekend</a>
-					<a href="#">#Music</a>				
-					<a href="#">#Discovery</a>			
+					<div class="article-tags pull-left">
+						<a href="#">#Weekend</a>
+						<a href="#">#Music</a>				
+						<a href="#">#Discovery</a>			
+					</div>
 				</div>
 
 		</article>
@@ -258,35 +257,36 @@
 				</div>
 
 				<div class="category">
-					<p>I Do Explore</p>
+					<span>I Do Explore</span>
 				</div>
+				<div class="main-content">
+					<div class="article-date">
+						<span>Sep 12</span>
+					</div>
 
-				<div class="article-date">
-					<p>Sep 12</p>
-				</div>
+					<div class="article-title">
+						<h1>Nature and Books belong to the eyes that see them.</h1>
+					</div>
 
-				<div class="article-title">
-					<h1>Nature and Books belong to the eyes that see them.</h1>
-				</div>
+					<hr>
 
-				<hr>
+					<div class="article-content">
+						<blockquote>Nunc a enim interdum lectus accumsan sagittis. Ut mauris diam, efficitur vitae malesuada ut, tempus et mi. Sed eget leo vehicula, dapibus arcu id, viverra erat. Proin auctor non nulla sed mollis. </blockquote>
 
-				<div class="article-content">
-					<blockquote>Nunc a enim interdum lectus accumsan sagittis. Ut mauris diam, efficitur vitae malesuada ut, tempus et mi. Sed eget leo vehicula, dapibus arcu id, viverra erat. Proin auctor non nulla sed mollis. </blockquote>
+						<p>Nulla elit leo, tincidunt eu lacus ut, suscipit gravida tortor. Praesent feugiat, neque non pellentesque, velit sem hendrerit arcu, eu viverra ligula eu tortor. Suspendisse et cursus enim. Curabitur condimentum, sem quis pharetra hendrerit, leo odio rhoncus felis, sed posuere augue diam feugiat enim. Donec gravida non metus eu pretium. Ut sed sodales dolor, non vehicula enim. Nam fringilla blandit sem, eget vestibulum arcu porta sed. Mauris sit amet nulla id ante semper luctus id a enim.</p>
 
-					<p>Nulla elit leo, tincidunt eu lacus ut, suscipit gravida tortor. Praesent feugiat, neque non pellentesque, velit sem hendrerit arcu, eu viverra ligula eu tortor. Suspendisse et cursus enim. Curabitur condimentum, sem quis pharetra hendrerit, leo odio rhoncus felis, sed posuere augue diam feugiat enim. Donec gravida non metus eu pretium. Ut sed sodales dolor, non vehicula enim. Nam fringilla blandit sem, eget vestibulum arcu porta sed. Mauris sit amet nulla id ante semper luctus id a enim.</p>
+						<p>Sed ac venenatis dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut ut congue nulla. Aenean elementum gravida convallis. Integer ac neque nisi. Sed ac magna in risus convallis laoreet. Pellentesque in orci ante.</p>
+					</div>
 
-					<p>Sed ac venenatis dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut ut congue nulla. Aenean elementum gravida convallis. Integer ac neque nisi. Sed ac magna in risus convallis laoreet. Pellentesque in orci ante.</p>
-				</div>
+					<div class="read-more pull-left">
+						<a href="#">READ MORE</a>
+					</div>
 
-				<div class="read-more">
-					<a href="#">READ MORE</a>
-				</div>
-
-				<div class="article-tags">				
-					<a href="#">#idea</a>
-					<a href="#">#Yosemite</a>
-					<a href="#">#Vacation</a>				
+					<div class="article-tags pull-right">				
+						<a href="#">#idea</a>
+						<a href="#">#Yosemite</a>
+						<a href="#">#Vacation</a>				
+					</div>
 				</div>
 
 		</article>
@@ -294,41 +294,42 @@
 		<article class="article-8">
 
 				<div class="category">
-					<p>I Do Reflect</p>
+					<span>I Do Reflect</span>
 				</div>
-
-				<div class="article-date">
-					<p>Sep 11</p>
-				</div>
-
-				<div class="article-title">
-					<h1>Democracy means simply the bludgeoning of the people by the people for the people.</h1>
-				</div>
-
-				<hr>
-
-				<div class="article-content">
-
-					<div class="content-image">
-						<a href="http://placeholder.com"><img src="http://via.placeholder.com/186x387"></a>
+				<div class="main-content">
+					<div class="article-date">
+						<span>Sep 11</span>
 					</div>
 
-					<p>Quisque congue lacus mattis massa luctus, nec hendrerit purus aliquet. Ut ac elementum urna. Pellentesque suscipit metus et egestas congue. Duis eu pellentesque turpis, ut maximus metus. Sed ultrices tellus vitae rutrum congue. Fusce luctus augue id nisl suscipit, vel sollicitudin orci egestas. Morbi posuere venenatis ipsum, ac vestibulum quam dignissim efficitur. Ut vitae rutrum augue, in volutpat quam. Cras a viverra ipsum. Aenean ut consequat ex, vitae vulputate nunc. Vestibulum metus nisi, aliquam sed tincidunt sit amet, pretium et augue.</p>
+					<div class="article-title">
+						<h1>Democracy means simply the bludgeoning of the people by the people for the people.</h1>
+					</div>
 
-					<p>Mauris sem odio, rhoncus eget euismod sed, pellentesque sit amet felis. Praesent dictum eleifend dui et efficitur. Nunc non orci in neque sodales semper. Etiam euismod volutpat lorem, vestibulum malesuada justo aliquet eget. Nunc lacus ante, varius a euismod eu, finibus commodo erat. Curabitur tincidunt sit amet nunc id interdum. Aliquam augue nisi, venenatis vitae ex at, lobortis fringilla nibh. Proin placerat enim vitae egestas eleifend. Aliquam quis orci dignissim, posuere nibh a, eleifend augue. Cras quis metus nec tortor aliquet ullamcorper. Quisque varius porta metus, ut maximus dolor euismod nec. Suspendisse sit amet feugiat turpis.</p>
+					<hr>
 
-					<blockquote>Curabitur ut leo pulvinar, consectetur magna eu, feugiat purus. Morbi hendrerit lectus turpis, a porttitor velit imperdiet id.</blockquote>
+					<div class="article-content">
 
-					<p>Nunc placerat dolor at lectus hendrerit dignissim. Ut tortor sem, consectetur nec hendrerit ut, ullamcorper ac odio. Donec viverra ligula at quam tincidunt imperdiet. Nulla mattis tincidunt auctor. Nullam scelerisque ante mauris, egestas commodo nisi gravida ultrices. Suspendisse dapibus feugiat tincidunt. Aliquam gravida quam at ipsum sagittis bibendum.</p>
-				</div>
+						<div class="content-image">
+							<a href="http://placeholder.com"><img src="http://via.placeholder.com/186x387"></a>
+						</div>
 
-				<div class="read-more">
-					<a href="post.html">READ MORE</a>
-				</div>
+						<p>Quisque congue lacus mattis massa luctus, nec hendrerit purus aliquet. Ut ac elementum urna. Pellentesque suscipit metus et egestas congue. Duis eu pellentesque turpis, ut maximus metus. Sed ultrices tellus vitae rutrum congue. Fusce luctus augue id nisl suscipit, vel sollicitudin orci egestas. Morbi posuere venenatis ipsum, ac vestibulum quam dignissim efficitur. Ut vitae rutrum augue, in volutpat quam. Cras a viverra ipsum. Aenean ut consequat ex, vitae vulputate nunc. Vestibulum metus nisi, aliquam sed tincidunt sit amet, pretium et augue.</p>
 
-				<div class="article-tags">
-					<a href="#">#Democracy</a>
-					<a href="#">#Introspection</a>				
+						<p>Mauris sem odio, rhoncus eget euismod sed, pellentesque sit amet felis. Praesent dictum eleifend dui et efficitur. Nunc non orci in neque sodales semper. Etiam euismod volutpat lorem, vestibulum malesuada justo aliquet eget. Nunc lacus ante, varius a euismod eu, finibus commodo erat. Curabitur tincidunt sit amet nunc id interdum. Aliquam augue nisi, venenatis vitae ex at, lobortis fringilla nibh. Proin placerat enim vitae egestas eleifend. Aliquam quis orci dignissim, posuere nibh a, eleifend augue. Cras quis metus nec tortor aliquet ullamcorper. Quisque varius porta metus, ut maximus dolor euismod nec. Suspendisse sit amet feugiat turpis.</p>
+
+						<blockquote>Curabitur ut leo pulvinar, consectetur magna eu, feugiat purus. Morbi hendrerit lectus turpis, a porttitor velit imperdiet id.</blockquote>
+
+						<p>Nunc placerat dolor at lectus hendrerit dignissim. Ut tortor sem, consectetur nec hendrerit ut, ullamcorper ac odio. Donec viverra ligula at quam tincidunt imperdiet. Nulla mattis tincidunt auctor. Nullam scelerisque ante mauris, egestas commodo nisi gravida ultrices. Suspendisse dapibus feugiat tincidunt. Aliquam gravida quam at ipsum sagittis bibendum.</p>
+					</div>
+
+					<div class="read-more pull-left">
+						<a href="post.html">READ MORE</a>
+					</div>
+
+					<div class="article-tags pull-right">
+						<a href="#">#Democracy</a>
+						<a href="#">#Introspection</a>				
+					</div>
 				</div>
 
 		</article>
