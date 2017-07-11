@@ -3,6 +3,7 @@ body{
 	background-color: #f7f9fc;
 	font-family: 'Lato', sans-serif;
 	position: relative;
+    margin: 0;
 }
 
 header {
@@ -144,7 +145,7 @@ article{
 }
 
 .article-image img{
-	width: 945px;
+	width: 951px;
     height: 530px;
 }
 
@@ -153,35 +154,233 @@ article{
     font-style: italic;
     color: rgba( 0, 0, 0, 0.502 );
     line-height: 38px;
-    margin: 0;
+    margin: 0 0 20px;
+    padding: 0px;
 }
 
-.image-top-left{
+.article-content blockquote, .article-quote blockquote{
+	border: none;
+}
+
+.non-hr h1{
+	border: none !important;
+}
+
+.article-quote{
+    margin-left: -40px;
+}
+.article-quote img{
+	position: relative;
+    left: -80px;
+    top: 45px;
+}
+
+.article-quote blockquote{
+    font-size: 40px;
+    font-style: italic;
+    line-height: 56px;
+    color: #1d1c1d;
+    padding-left: 40px;
+}
+
+.article-quote-user span{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 50px;
+    color: #cccccc;
+}
+
+.article-8 .main-content .article-content blockquote{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #999999;
+    border-left: 4px solid #eeeeee !important;
+    padding-left: 20px;
+}
+
+.blog-pagination{
+    text-align: center;
+    width: auto;
+    height: 40px;
+    padding-top: 20px;
+    padding-bottom: 115px;
+}
+
+.page-no{
+	display: inline-block;
+    background-color: #ffffff;
+    width: 40px;
+    height: 40px;
+    box-shadow: 2px 5px 20px 3px #e7e7e7;
+    margin-left: 15px;
+}
+.page-no.active{
+	background-color: #5c6bc0 !important;
+}
+
+.page-no.active a{
+    color: #ffffff !important;
+}
+
+.page-no a{
+    color: #333333;
+    margin-bottom: 36px;
+    line-height: 35px;
+}
+
+.blog-footer {
+    background-color: #5c6bc0;
+    text-align: center;
+}
+
+.blog-footer h1{
+    font-size: 36px;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 25px;
+    color: #4a569a;
+    padding-top: 65px;
+}
+
+#footer-nav-bar{
+    padding-top: 65px;
+    padding-bottom: 45px;
+}
+
+#footer-nav-bar nav a{
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 25px;
+    padding-left: 40px;
+}
+
+#footer-nav-bar nav a.footer-home{
+	color: #a9afdb;
+}
+
+.footer-content{
+    padding-bottom: 40px;
+    border-top: 2px solid #5765b5;
+    padding-top: 40px;
+    max-width: 925px;
+    height: auto;
+    display: table;
+    margin: 0 auto;
+    color: #9da6d9;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 23px;
     position: relative;
-    left: 10px;
-    top: 10px;
-    float: left;
+    width: 90%;
 }
 
-.image-top-right{
-    float: right;
-    position: relative;
-    left: 10px;
-    top: 10px;
-    width: 465px;
-    height: 330px;
+.footer-content:after {
+	content:"";
+	width:80%;
+	height:2px;
+	background-color:#5765b5;
+	position:absolute;
+	left:50%;
+	bottom:0px;
+	transform: translate(-50%);
 }
 
-.image-bottom-left{
+.copyright{
+    padding-bottom: 35px;
+    padding-top: 35px;
+    color: #99a2d7;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.copyright span b{
+	color: #ffffff;
+    font-weight: bold;
+}
+
+.social-nav a{
+    margin-right: 23px;
+}
+
+.social-nav{
+	padding-bottom: 80px;
+}
+
+.image-left{
 	float: left;
-    position: relative;
-    top: 20px;
-    left: 10px;
+}
+.image-right{
+	float: right;
 }
 
-.image-bottom-right{
-	float: right;
+.article-image-gallery{
+    height: 600px;
+    width: 100%;
+}
+
+.image-left-top{
+    width: 455px;
+    height: 260px;
+    margin: 10px 0px 10px 15px;
     position: relative;
-    left: 8px;
-    top: 10px;
+    overflow: hidden;
+}
+
+.image-left-bottom{
+    width: 455px;
+    height: 310px;
+    margin: 0 0 0 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-right-top{
+    width: 455px;
+    height: 326px;
+    margin: 10px 15px 10px 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-right-bottom{
+    width: 455px;
+    height: 240px;
+    margin: 10px 5px 10px 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay{
+    position: absolute;
+    background-color: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #fff;
+    text-align: center;
+    line-height: 300px;
+    font-size: 50px;
+}
+
+.overlay .count{
+	text-align: center;
+    font-size: 78px;
+    font-weight: 400;
+    line-height: 72px;
+    padding-top: 72px;
+}
+
+.overlay .photo{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 72px;
+    padding-bottom: 65px;
+}
+
+.text-link{
+	border-bottom: 1px solid #727fc8;
 }
