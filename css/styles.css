@@ -1,17 +1,10 @@
 /* Styles goes Here */
+/* Common Styles */
 body{
 	background-color: #f7f9fc;
 	font-family: 'Lato', sans-serif;
 	position: relative;
     margin: 0;
-}
-
-header {
-	max-width: 1400px;
-	height: auto;
-    margin: auto;
-    width: 50%;
-	z-index: 189;
 }
 
 p{
@@ -23,6 +16,15 @@ p{
 
 a{
 	text-decoration: none;
+}
+
+/* Header Section*/
+header {
+    max-width: 1400px;
+    height: auto;
+    margin: auto;
+    width: 50%;
+    z-index: 189;
 }
 
 .blog-logo{
@@ -70,13 +72,13 @@ a.home{
 	color: rgb( 189, 189, 189 ) !important;
 }
 
+/* article section */
 article{
 	background-color: #ffffff;
     width: 50%;
     height: auto;
     max-width: 1000px;
     margin: auto;
-    /*padding: 10px;*/
     margin-bottom: 50px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #eeeeee;
 }
@@ -243,6 +245,7 @@ article{
     padding-top: 65px;
 }
 
+/* footer section */
 #footer-nav-bar{
     padding-top: 65px;
     padding-bottom: 45px;
@@ -309,9 +312,11 @@ article{
 	padding-bottom: 80px;
 }
 
+/* image gallery section */
 .image-left{
 	float: left;
 }
+
 .image-right{
 	float: right;
 }
@@ -383,4 +388,20 @@ article{
 
 .text-link{
 	border-bottom: 1px solid #727fc8;
+    text-decoration: none !important;
+    color: #727fc8;
+}
+
+/* Single page styles here */
+.facebook-share-count {
+    float: left;
+    background-color: #fff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #cdd5e5;
+    margin-left: 6px;
+    margin-top: 1px;
+    padding: 1px 2px;
+    position: relative;
+    height: 14px;
 }
