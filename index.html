@@ -6,12 +6,14 @@
 
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/thumbnail-slider.css">
+	<link rel="stylesheet" type="text/css" href="css/images-grid.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Domine" rel="stylesheet">
 
-	<!-- Scripts -->
 
 </head>
 <body>
@@ -72,17 +74,22 @@
 						<p class="level-three-p">Sed sagittis commodo dolor. Vivamus elementum sem sed sapien bibendum viverra. Curabitur semper scelerisque turpis eu ullamcorper. Morbi tincidunt auctor orci id consequat. Nulla odio mi, iaculis id congue quis, euismod id nisi. In varius congue diam, et viverra lorem bibendum ut.</p>
 					</p>
 					<a href="#" class="read-more">READ MORE</a>
+					<div class="signature">
+						<a href="">#Yosemite</a>
+						<a href="">#Peak </a>
+						<a href="">#Explorer</a>
+				</div>
 				</div>
 			</div>
 
 
 			<!-- Block photos -->
 			<div class="article block-photos">
-				<div class="image-gallery">
-					<img src="http://via.placeholder.com/350x150">
-					<img src="http://via.placeholder.com/350x150">
-					<img src="http://via.placeholder.com/350x150">
-					<img src="http://via.placeholder.com/350x150">
+				<div id="gallery" class="image-gallery">
+					<img src="images/g1.png">
+					<img src="images/g2.png">
+					<img src="images/g3.png">
+					<img src="images/g4.png">
 				</div>
 				<div class="date-wrapper">
 					<span class="date">Sep 20</span>
@@ -103,7 +110,7 @@
 
 			<!-- Block Video -->
 			<div class="article block-video">
-				<iframe width="952" height="534"
+				<iframe width="954" height="534"
 					src="https://www.youtube.com/embed/9fJEFi3ccwI">
 				</iframe>
 				<div class="content-wrapper">
@@ -112,7 +119,6 @@
 						<div class="panel-blue">I Do Watch</div>
 					</div>
 					<h1 class="panel-heading">As human beings, we have a natural compulsion to fill empty spaces.</h1>
-					<a href="#" class="read-more">READ MORE</a>
 					<div class="signature">
 						<a href="">#Yosemite</a>
 						<a href="">#Peak </a>
@@ -124,24 +130,31 @@
 
 			<!-- Block Quote -->
 			<blockquote class="article quote">
-				<p class="quote">
+				<div class="date-wrapper">
+					<div class="panel-blue">I Do Quote</div>
+				</div>
+				<img src="images/Quotation_marks.png" class="quotation-mark">
+				<p class="quote-content">
 					<i>There is always something left to love. And if you ain’t learned that, you ain’t learned nothing.</i>
 				</p>
+				<div class="signature">— Lorraine Hansberry</div>
 			</blockquote>
 
 
 			<!-- Block Audio -->
 			<div class="article block-audio">
-				<div class="panel-blue-lg"></div>
 
-				<div class="audio">
-					<div class="play-button">
-						<a href="http://placeholder.com"><img src="http://via.placeholder.com/48x48"></a>
-					</div>
+				<div class="panel-blue-lg"></div>
+				<div class="player">
 					<div class="audio-title"></div>
-					<audio controls>
-					  <source src="Ride It.mp3" type="audio/mpeg">
-					</audio>
+					<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/34019569&amp;color=0066cc"></iframe>
+				</div>
+
+				<div class="content-wrapper audio">
+					<div class="date-wrapper">
+						<span class="date">Sep 20</span>
+						<div class="panel-blue">I Do Listen</div>
+					</div>					
 					<h1 class="panel-heading">
 						Music was my refuge. I could crawl into the space between the notes and curl my back to loneliness.
 					</h1>
@@ -163,28 +176,38 @@
 			<!-- Block Explore -->
 			<div class="article block-explore">
 
-				<div class="image-slider">
-					<img src="http://via.placeholder.com/350x150">
-					<img src="http://via.placeholder.com/350x150">
-					<img src="http://via.placeholder.com/350x150">
-					<img src="http://via.placeholder.com/350x150">
-				</div>
+				<div id="thumbnail-slider">
+		            <div class="inner">
+		                <ul>
+		                    <li>
+		                        <a class="thumb" href="images/1.png"></a>
+		                    </li>
+		                    <li>
+		                        <a class="thumb" href="images/2.png"></a>t
+		                    </li>
+		                    <li>
+		                        <a class="thumb" href="images/3.png"></a>t
+		                    </li>
+		                    <li>
+		                        <a class="thumb" href="images/4.png"></a>t
+		                    </li>
+		                </ul>
+		            </div>
+		        </div>
 				
 				<div class="date-wrapper">
 					<span class="date">Sep 20</span>
-					<div class="panel-blue">I Do Photos</div>
+					<div class="panel-blue">I Do Explorer</div>
 				</div>
 				<h1 class="panel-heading">Nature and Books belong to the eyes that see them.</h1>
-				<p class="panel-content">
-					<p class="p1">
-						Nunc a enim interdum lectus accumsan sagittis. Ut mauris diam, efficitur vitae malesuada ut, tempus et mi. Sed eget leo vehicula, dapibus arcu id, viverra erat. Proin auctor non nulla sed mollis.
-					</p>
-					<p class="p2">
-						Nulla elit leo, tincidunt eu lacus ut, suscipit gravida tortor. Praesent feugiat, neque non pellentesque, velit sem hendrerit arcu, eu viverra ligula eu tortor. Suspendisse et cursus enim. Curabitur condimentum, sem quis pharetra hendrerit, leo odio rhoncus felis, sed posuere augue diam feugiat enim. Donec gravida non metus eu pretium. Ut sed sodales dolor, non vehicula enim. Nam fringilla blandit sem, eget vestibulum arcu porta sed. Mauris sit amet nulla id ante semper luctus id a enim.
-					</p>
-					<p class="p2">
-						Sed ac venenatis dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut ut congue nulla. Aenean elementum gravida convallis. Integer ac neque nisi. Sed ac magna in risus convallis laoreet. Pellentesque in orci ante.
-					</p>
+				<p class="p1">
+					Nunc a enim interdum lectus accumsan sagittis. Ut mauris diam, efficitur vitae malesuada ut, tempus et mi. Sed eget leo vehicula, dapibus arcu id, viverra erat. Proin auctor non nulla sed mollis.
+				</p>
+				<p class="p2">
+					Nulla elit leo, tincidunt eu lacus ut, suscipit gravida tortor. Praesent feugiat, neque non pellentesque, velit sem hendrerit arcu, eu viverra ligula eu tortor. Suspendisse et cursus enim. Curabitur condimentum, sem quis pharetra hendrerit, leo odio rhoncus felis, sed posuere augue diam feugiat enim. Donec gravida non metus eu pretium. Ut sed sodales dolor, non vehicula enim. Nam fringilla blandit sem, eget vestibulum arcu porta sed. Mauris sit amet nulla id ante semper luctus id a enim.
+				</p>
+				<p class="p2">
+					Sed ac venenatis dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut ut congue nulla. Aenean elementum gravida convallis. Integer ac neque nisi. Sed ac magna in risus convallis laoreet. Pellentesque in orci ante.
 				</p>
 
 				<a href="#" class="read-more">READ MORE</a>
@@ -198,22 +221,29 @@
 
 			<!-- Block Reflect -->
 			<div class="article block-reflect">
-				<span class="date">Sep 20</span>
-				<div class="panel-blue">I Do Reflect</div>
+				<div class="date-wrapper">
+					<span class="date">Sep 20</span>
+					<div class="panel-blue">I Do Reflect</div>
+				</div>
 				<h1 class="panel-heading">Democracy means simply the bludgeoning of the people by the people for the people.</h1>
-				<img src="http://via.placeholder.com/186x387">
-				<p>
-					Quisque congue lacus mattis massa luctus, nec hendrerit purus aliquet. Ut ac elementum urna. Pellentesque suscipit metus et egestas congue. Duis eu pellentesque turpis, ut maximus metus. Sed ultrices tellus vitae rutrum congue. Fusce luctus augue id nisl suscipit, vel sollicitudin orci egestas. Morbi posuere venenatis ipsum, ac vestibulum quam dignissim efficitur. Ut vitae rutrum augue, in volutpat quam. Cras a viverra ipsum. Aenean ut consequat ex, vitae vulputate nunc. Vestibulum metus nisi, aliquam sed tincidunt sit amet, pretium et augue.
-				</p>
-				<p>
-					Quisque congue lacus mattis massa luctus, nec hendrerit purus aliquet. Ut ac elementum urna. Pellentesque suscipit metus et egestas congue. Duis eu pellentesque turpis, ut maximus metus. Sed ultrices tellus vitae rutrum congue. Fusce luctus augue id nisl suscipit, vel sollicitudin orci egestas. Morbi posuere venenatis ipsum, ac vestibulum quam dignissim efficitur. Ut vitae rutrum augue, in volutpat quam. Cras a viverra ipsum. Aenean ut consequat ex, vitae vulputate nunc. Vestibulum metus nisi, aliquam sed tincidunt sit amet, pretium et augue.
-				</p>
-				<blockquote>
-					Curabitur ut leo pulvinar, consectetur magna eu, feugiat purus. Morbi hendrerit lectus turpis, a porttitor velit imperdiet id.
-				</blockquote>
-				<p>
-					Quisque congue lacus mattis massa luctus, nec hendrerit purus aliquet. Ut ac elementum urna. Pellentesque suscipit metus et egestas congue. Duis eu pellentesque turpis, ut maximus metus. Sed ultrices tellus vitae rutrum congue. Fusce luctus augue id nisl suscipit, vel sollicitudin orci egestas. Morbi posuere venenatis ipsum, ac vestibulum quam dignissim efficitur. Ut vitae rutrum augue, in volutpat quam. Cras a viverra ipsum. Aenean ut consequat ex, vitae vulputate nunc. Vestibulum metus nisi, aliquam sed tincidunt sit amet, pretium et augue.
-				</p>
+				<img src="images/statue.png">
+				<div class="para-wrapper-1">
+					<p>
+						Quisque congue lacus mattis massa luctus, nec hendrerit purus aliquet. Ut ac elementum urna. Pellentesque suscipit metus et egestas congue. Duis eu pellentesque turpis, ut maximus metus. Sed ultrices tellus vitae rutrum congue. Fusce luctus augue id nisl suscipit, vel sollicitudin orci egestas. Morbi posuere venenatis ipsum, ac vestibulum quam dignissim efficitur. Ut vitae rutrum augue, in volutpat quam. Cras a viverra ipsum. Aenean ut consequat ex, vitae vulputate nunc. Vestibulum metus nisi, aliquam sed tincidunt sit amet, pretium et augue.
+					</p>
+					<p>
+						Quisque congue lacus mattis massa luctus, nec hendrerit purus aliquet. Ut ac elementum urna. Pellentesque suscipit metus et egestas congue. Duis eu pellentesque turpis, ut maximus metus. Sed ultrices tellus vitae rutrum congue. Fusce luctus augue id nisl suscipit, vel sollicitudin orci egestas. Morbi posuere venenatis ipsum, ac vestibulum quam dignissim efficitur. Ut vitae rutrum augue, in volutpat quam. Cras a viverra ipsum. Aenean ut consequat ex, vitae vulputate nunc. Vestibulum metus nisi, aliquam sed tincidunt sit amet, pretium et augue.
+					</p>
+				</div>
+				<div class="para-wrapper-2">
+					<blockquote>
+						Curabitur ut leo pulvinar, consectetur magna eu, feugiat purus. Morbi hendrerit lectus turpis, a porttitor velit imperdiet id.
+					</blockquote>
+					<p>
+						Quisque congue lacus mattis massa luctus, nec hendrerit purus aliquet. Ut ac elementum urna. Pellentesque suscipit metus et egestas congue. Duis eu pellentesque turpis, ut maximus metus. Sed ultrices tellus vitae rutrum congue. Fusce luctus augue id nisl suscipit, vel sollicitudin orci egestas. Morbi posuere venenatis ipsum, ac vestibulum quam dignissim efficitur. Ut vitae rutrum augue, in volutpat quam. Cras a viverra ipsum. Aenean ut consequat ex, vitae vulputate nunc. Vestibulum metus nisi, aliquam sed tincidunt sit amet, pretium et augue.
+					</p>
+				</div>
+
 
 				<a href="readmore.html" class="read-more">READ MORE</a>
 				<div class="signature">
@@ -225,12 +255,26 @@
 
 			<!-- Pagination -->
 			<div class="pagination">
-			  <a href="#">1</a>
-			  <a href="#">2</a>
-			  <a href="#">3</a>
-			  <a href="#">4</a>
-			  <a href="#">5</a>
-			  <a href="#">6</a>
+				<ul>
+					<li>
+						<a href="#">1</a>
+					</li>
+					<li>
+						<a href="#">2</a>
+					</li>
+					<li>
+						<a href="#">3</a>
+					</li>
+					<li>
+						<a href="#">4</a>
+					</li>
+					<li>
+						<a href="#">5</a>
+					</li>
+					<li>
+						<a href="#">6</a>
+					</li>
+			 	</ul>
 			</div>
 		</div>
 
@@ -270,6 +314,10 @@
 		</div>
 	</footer>
 	<!-- End of Footer -->
+
+	<script type="text/javascript" src="js/thumbnail-slider.js"></script>
+	<script type="text/javascript" src="js/images-grid.js"></script>
+	<script type="text/javascript" src="js/scripts.js" ></script>
 	
 </body>
 </html>
