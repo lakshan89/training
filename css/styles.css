@@ -147,8 +147,7 @@ article{
 }
 
 .article-image img{
-	width: 951px;
-    height: 530px;
+	width: 100%;
 }
 
 .article-content blockquote{
@@ -216,19 +215,14 @@ article{
     height: 40px;
     box-shadow: 2px 5px 20px 3px #e7e7e7;
     margin-left: 15px;
+    color: #333333;
+    margin-bottom: 36px;
+    line-height: 40px;
+    text-decoration: none;
 }
 .page-no.active{
 	background-color: #5c6bc0 !important;
-}
-
-.page-no.active a{
     color: #ffffff !important;
-}
-
-.page-no a{
-    color: #333333;
-    margin-bottom: 36px;
-    line-height: 35px;
 }
 
 .blog-footer {
