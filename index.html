@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />  
 	<title>Document</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
@@ -10,8 +11,11 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/css/slider.css">
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="/js/slider.js"></script>
 	<script src="/js/jssor.slider-25.2.0.min.js" type="text/javascript"></script>
+	
 </head>
 <body>
 	<!--header-progress-bar-->
@@ -21,22 +25,30 @@
   		</div>
 	</div>
 	<!--header-progress-bar-->
-
 	<!--header start-->
 	<header>
 		<div class="blog-logo">
 			<h1>Palo Alto</h1>
 		</div>
-
 		<div id="nav-bar" class="pull-right">
-			<nav>
-				<a class="home" href="#">HOME</a>
-				<a href="#">ABOUT</a>
-				<a href="#" class="active">ARCHIVE</a>
-				<a href="#">CONTACT</a>
-				<a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
-				<!-- <a href="#" class="burger-icon"><i class="fa fa-bars" aria-hidden="true"></i></a> -->
-			</nav>
+			<nav class="navbar navbar-default">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar icon-bar-lg"></span>
+					<span class="icon-bar icon-bar-lg"></span>
+					<span class="icon-bar icon-bar-sm"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li><a class="home" href="#">HOME</a></li>
+					<li><a href="#">ABOUT</a></li>
+					<li><a class="active" href="#">ARCHIVE</a></li>
+					<li><a href="#">CONTACT</a></li>
+					<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+				</ul>
+				</div>
 		</div>
 
 	</header>
@@ -53,7 +65,6 @@
 					<div class="article-date">
 						<span>Sep 20</span>
 					</div>
-
 					<div class="article-title">
 						<h1>No difference how many peaks you reach if there was no pleasure in the climb.</h1>
 					</div>
@@ -66,10 +77,10 @@
 						<a href="#">READ MORE</a>
 					</div>
 
-					<div class="article-tags pull-right">
+					<div class="article-tags">
 						<a href="#">#Yosemite</a>
-						<a href="#">#Peak</a>
-						<a href="#">#Explorer</a>	
+						<a class="tag-padding" href="#">#Peak</a>
+						<a class="tag-padding" href="#">#Explorer</a>	
 					</div>
 				</div>
 
@@ -81,7 +92,7 @@
 					<img src="/images/post2-img.png">
 				</div>
 
-				<div class="category">
+				<div class="category image-category">
 					<span>I Do Observe</span>
 				</div>
 				<div class="main-content">
@@ -105,10 +116,10 @@
 						<a href="#">READ MORE</a>
 					</div>
 
-					<div class="article-tags pull-right">
+					<div class="article-tags">
 						<a href="#">#Yosemite</a>	
-						<a href="#">#Peak</a>	
-						<a href="#">#Photo</a>	
+						<a class="tag-padding" href="#">#Peak</a>	
+						<a class="tag-padding" href="#">#Photo</a>	
 					</div>
 				</div>
 
@@ -147,7 +158,7 @@
 	
 				</div>
 
-				<div class="category">
+				<div class="category image-gallery-category">
 					<span>I Do Photos</span>
 				</div>
 				<div class="main-content">
@@ -168,10 +179,10 @@
 						<a href="#">READ MORE</a>
 					</div>
 
-					<div class="article-tags pull-right">
+					<div class="article-tags">
 						<a href="#">#Yosemite</a>
-						<a href="#">#Photo</a>
-						<a href="#">#Hi-res</a>
+						<a class="tag-padding" href="#">#Photo</a>
+						<a class="tag-padding" href="#">#Hi-res</a>
 					</div>
 				</div>
 
@@ -180,7 +191,7 @@
 		<article class="article-4">
 
 				<div class="article-video">
-					<iframe width="100%" height="530" src="https://www.youtube.com/embed/VXr4BH3uv_k" frameborder="0" allowfullscreen></iframe>
+					<!-- <iframe width="100%" height="530" src="https://www.youtube.com/embed/VXr4BH3uv_k" frameborder="0" allowfullscreen></iframe> -->
 				</div>
 
 				<div class="category">
@@ -197,8 +208,8 @@
 
 					<div class="article-tags pull-left">
 						<a href="#">#Yosemite</a>
-						<a href="#">#Peak</a>
-						<a href="#">#Photo</a>				
+						<a class="tag-padding" href="#">#Peak</a>
+						<a class="tag-padding" href="#">#Photo</a>				
 					</div>
 				</div>
 
@@ -248,10 +259,10 @@
 						<a href="#">READ MORE</a>
 					</div>
 
-					<div class="article-tags pull-right">
+					<div class="article-tags">
 						<a href="#">#Weekend</a>
-						<a href="#">#Music</a>				
-						<a href="#">#Discovery</a>			
+						<a class="tag-padding" href="#">#Music</a>				
+						<a class="tag-padding" href="#">#Discovery</a>			
 					</div>
 				</div>
 
@@ -314,10 +325,10 @@
 						<a href="#">READ MORE</a>
 					</div>
 
-					<div class="article-tags pull-right">				
+					<div class="article-tags">				
 						<a href="#">#idea</a>
-						<a href="#">#Yosemite</a>
-						<a href="#">#Vacation</a>				
+						<a class="tag-padding" href="#">#Yosemite</a>
+						<a class="tag-padding" href="#">#Vacation</a>				
 					</div>
 				</div>
 
@@ -358,16 +369,16 @@
 						<a href="post.html">READ MORE</a>
 					</div>
 
-					<div class="article-tags pull-right">
+					<div class="article-tags">
 						<a href="#">#Democracy</a>
-						<a href="#">#Introspection</a>				
+						<a class="tag-padding" href="#">#Introspection</a>				
 					</div>
 				</div>
 
 		</article>
 
 		<div class="blog-pagination">
-				<a class="page-no active" href="#">1</a>				
+				<a class="page-no select" href="#">1</a>				
 				<a class="page-no" href="#">2</a>				
 				<a class="page-no" href="#">3</a>						
 		</div>

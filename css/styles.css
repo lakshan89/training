@@ -28,7 +28,7 @@ header {
 }
 
 .blog-logo{
-    margin: 74px 0px 74px 0px;
+    margin: 95px 0px 74px 0px;
     display: inline-block;
 }
 
@@ -65,11 +65,50 @@ a.active {
     border-bottom-style: solid;
     border-color: rgb( 92, 107, 192 );
     border-bottom-width: 3px;
-    padding-bottom: 4px;
+    padding: 15px 0px 4px 0px !important;
+}
+
+a.select{
+    border-bottom-style: solid;
+    border-color: rgb( 92, 107, 192 );
+    border-bottom-width: 3px;  
 }
 
 a.home{
 	color: rgb( 189, 189, 189 ) !important;
+}
+
+.navbar-default {
+    background-color: #fff !important;
+    border-color: #fff !important;
+}
+
+.navbar-default .navbar-nav>.active>a{
+    background-color: #fff !important;
+}
+
+.navbar-collapse{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.navbar-toggle{
+    margin-right: 0px !important;
+    left: 30px;
+}
+.navbar-default .navbar-toggle { border-color: #fff !important; }
+
+.navbar-toggle .icon-bar-lg{ width: 35px !important; }
+
+.navbar-toggle .icon-bar+.icon-bar { margin-top: 10px!important; }
+
+.icon-bar-sm{     
+    width: 25px !important;
+    float: right !important;
+}
+
+.icon-bar{ 
+    background-color: #5c6bc0 !important;
 }
 
 /* article section */
@@ -80,7 +119,7 @@ article{
     max-width: 1000px;
     margin: auto;
     margin-bottom: 50px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #eeeeee;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #eeeeee;
 }
 
 .category {
@@ -143,11 +182,22 @@ article{
 	font-size: 15px;
 	font-weight: 400;
 	color: #b2b2b2;
-	padding-left: 13px;
+}
+
+.article-tags {
+    float: right;
+}
+
+.tag-padding{
+    padding-left: 13px;
 }
 
 .article-image img{
 	width: 100%;
+}
+
+blockquote{
+    padding-top: 0px !important;
 }
 
 .article-content blockquote{
@@ -174,6 +224,7 @@ article{
 	position: relative;
     left: -80px;
     top: 45px;
+    width: 85px;
 }
 
 .article-quote blockquote{
@@ -220,7 +271,7 @@ article{
     line-height: 40px;
     text-decoration: none;
 }
-.page-no.active{
+.page-no.select{
 	background-color: #5c6bc0 !important;
     color: #ffffff !important;
 }
@@ -316,7 +367,8 @@ article{
 }
 
 .article-image-gallery{
-    height: 600px;
+    height: auto;
+    min-height: 600px;
     width: 100%;
 }
 
@@ -399,3 +451,140 @@ article{
     position: relative;
     height: 14px;
 }
+
+
+/* Responsive styles here */
+
+@media screen and (max-width : 1439px ) {
+
+    .blog-logo h1{
+        font-size: 25px;
+    }
+   
+    #nav-bar {
+        margin-top: 95px;
+    }
+}
+
+@media screen and (max-width : 479px ) {
+
+    /* Header Section*/
+    header{
+        max-width: 480px;
+        width: 80%;
+    }
+
+    .blog-logo { margin: 60px 0 60px 0; }
+
+    .blog-logo h1{ font-size: 42px; }
+
+    #nav-bar { margin-top: 65px; }
+
+    .navbar-default{
+        background-color: #fff !important;
+        border-color: #fff !important;
+    }
+
+    /* article section */
+
+    article{
+        max-width: 480px;
+        width: 90%;
+    }
+
+    .main-content {
+        padding: 60px 50px 140px 50px;
+    }
+
+    .article-title h1 {
+        font-size: 32px;
+        padding-bottom: 50px;
+        line-height: 42px;
+    }
+
+    .article-content p{
+        font-size: 18px;
+        line-height: 34px;
+    }
+
+    .read-more a {
+        font-size: 24px;
+        line-height: 50px;
+    }
+
+    .article-content {
+        margin-top: 45px;
+        margin-bottom: 45px;
+    }
+
+    .article-tags {
+        float: left !important;
+        margin-top: 20px;
+    }
+
+    .article-content blockquote{
+        font-size: 21px;
+        line-height: 32px; 
+    }
+
+    .article-quote img{
+        left: -29px;
+    }
+
+    .article-quote blockquote {
+        font-size: 32px;
+        line-height: 45px;
+        padding-left: 30px;
+    }
+
+    .article-quote-user span {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 50px;
+    }
+
+    .image-left-bottom, .image-right-top{
+        display: none;
+    }
+    
+    .image-left-top, .image-right-bottom{
+        width: 410px;
+        height: 250px;
+        left: -5px;
+        
+    }
+
+    .image-right-bottom{
+        margin: 0px 5px 10px 0px;
+    }
+
+    .category{
+        margin: 0px;
+    }
+
+    .image-category{
+        position: relative;
+        top: -240px;
+    }
+
+    .image-gallery-category{
+        position: relative;
+        top: -590px;
+        right: 11px;
+    }
+
+}
+
+@media screen and (max-width : 319px ) {
+    .blog-logo h1{
+        font-size: 25px;
+    }
+   
+    #nav-bar {
+        margin-top: 95px;
+    }
+}
+
+ 
+ 
+
