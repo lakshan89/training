@@ -74,7 +74,7 @@ a.select{
     border-bottom-width: 3px;  
 }
 
-a.home{
+a.active-menu-item{
 	color: rgb( 189, 189, 189 ) !important;
 }
 
@@ -623,6 +623,68 @@ blockquote{
     float: right;
 }
 
+ /* Contact page styles here */
+.contact-title {
+    margin: 0px;
+    color: #000000;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-color: rgb( 238, 238, 238 );
+    padding-bottom: 40px;
+}
+.contact-title h1{
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+
+.form-input-half{
+    width: 47%;
+    height: 45px;
+    background-color: #f7f9fc;
+    border: none;
+}
+
+.form-name{
+    margin: 50px 30px 30px 0;
+    display: inline-block;
+}
+
+.form-email{
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 30PX;
+}
+
+.form-input-full{
+    width: 100%;
+    height: 45px;
+    background-color: #f7f9fc;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.form-textarea{height: 150px;}
+
+.contact-button{
+    color: #5c6bc0;
+    font-size: 24px;
+    line-height: 50px;
+    font-weight: 700;
+    background-color: #fff;
+    border: none;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #c4c5c7; 
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
 /* Responsive styles here */
 
 @media screen and (max-width : 1439px ) {
@@ -772,7 +834,7 @@ blockquote{
         padding: 55px 165px 50px 65px;
     }
 
-    /* Post page styles here */
+    /* Post page responsive styles here */
 
     .social-button button img {
         position: relative;
@@ -828,6 +890,20 @@ blockquote{
         padding-bottom: 10px;
     }
 
+
+     /* Contact page responsive styles here */
+
+    .form-name, .form-email{
+        display: block;
+    }
+
+    .form-email{
+        margin-left: 0px;
+    }
+
+    .form-input-half{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width : 479px ) {
