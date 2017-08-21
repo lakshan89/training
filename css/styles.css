@@ -442,20 +442,186 @@ blockquote{
     float: left;
 }
 
-/* Single page styles here */
-.facebook-share-count {
-    float: left;
-    background-color: #fff;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #cdd5e5;
-    margin-left: 6px;
-    margin-top: 1px;
-    padding: 1px 2px;
-    position: relative;
-    height: 14px;
+/* Post page styles here */
+.tweet-button button{
+    width: 55px;
+    background-color: rgba(227, 227, 227, 0.52);
 }
 
+.tweet-button button img{
+    bottom: 7px;
+    right: 4px;
+}
+
+.fbLike-button button{
+    width: 50px;
+    background-color: rgb(69, 95, 169);
+}
+
+.fbLike-button button img{
+    right: 4px;
+}
+
+.gplus-button button{
+    width: 30px;
+    background-color: #ffffff;
+}
+
+.gplus-button button img{
+    right: 6px;
+}
+
+.pinit-button button{
+    width: 45px;
+    background-color: rgba(236, 236, 236, 0.65);  
+}
+
+.pinit-button button img{
+    right: 1px;
+}
+
+.social-button{
+    padding-right: 11px;
+}
+
+.social-button button{
+    height: 20px;
+    border: 1px #cccccc solid;
+    border-radius: 2px;
+}
+
+.social-button button img{
+    position: relative;
+    bottom: 3px;
+}
+
+.article-share{
+    display: flex;
+    float: left;
+}
+
+.s-count{
+    border: 1px solid #bbbbbb;
+    height: 20px;
+    position: relative;
+    min-width: 20px;
+    width: auto;
+    padding: 0 4px;
+    text-align: center;
+    margin: 0;
+    font-size: 12px;
+    display: inline-block;
+    top: -5px;
+}
+
+.s-count:after, .s-count:before {
+    border: solid transparent;
+    content: ' ';
+    height: 0;
+    left: -10px;
+    position: absolute;
+    width: 0;
+    margin-top: 24px;
+}
+.s-count:after {
+    border-width: 3px;
+    border-right-color: #f9f9f9;
+    top: -18px;
+    left: -6px;
+}
+
+.s-count:before {
+    border-width: 5px;
+    border-right-color: #bbbbbb;
+    top: -20px;
+}
+
+.comment-section{
+   padding: 0px 100px 10px 100px;
+}
+
+.comment-section-left span{
+    font-weight: bold;
+    padding-right: 30px;
+}
+
+.comment-section-left{
+    float: left;
+}
+
+.comment-text{
+    color: #889aa3;
+    float: right;
+}
+
+.fa-comment-color{
+    color: #f55567;
+    padding-right: 10px;
+}
+
+.comment-text{
+    font-weight: bold;
+}
+
+.comment-content{
+    padding: 0px 100px 10px 100px;
+}
+
+.comment-section-right span {
+    font-weight: bold;
+    padding-right: 30px;
+    font-size: 13px;
+    color: #889aa3;
+    float: left;
+}
+
+.shorting{
+    font-weight: bold;
+    font-size: 13px;
+    color: #889aa3;
+    float: right;
+}
+
+.comment-form{
+    padding: 25px 100px 10px 100px;
+}
+
+.comment-image input{
+    width: 90%;
+    height: 50px;
+    border: 2px #ced6d9 solid;
+    border-radius: 5px;
+    padding-left: 10px;
+    float: right;
+}
+
+.comment-form p{
+    text-align: center;
+    margin: 10px 0 0;
+    padding-top: 70px;
+    padding-bottom: 45px;
+    color: #b1b3b4;
+}
+
+.comment-footer a{
+    color: #ccd4d9;
+    float: left;
+    padding-right: 30px;
+}
+
+.comment-footer h5{
+    float: right;
+    font-weight: bold;
+    color: #ccd4d9;
+}
+
+.comment-footer{
+    padding-bottom: 110px;
+}
+
+.article-tags{
+    float: right;
+}
 
 /* Responsive styles here */
 
@@ -606,6 +772,62 @@ blockquote{
         padding: 55px 165px 50px 65px;
     }
 
+    /* Post page styles here */
+
+    .social-button button img {
+        position: relative;
+        bottom: 3px;
+    }
+
+    .tweet-button button img {
+        bottom: 3px !important;
+        right: 4px;
+    }
+
+    .comment-section, .comment-content {
+        padding: 0px 10px 10px 50px;
+    }
+
+    .comment-form{
+        padding: 50px 10px 10px 50px;
+    }
+
+    .comment-image input {
+        width: 80%;
+    }
+
+    .comment-footer a {
+        color: #ccd4d9;
+        float: left;
+        padding-right: 22px;
+    }
+
+    .comment-form p {
+        text-align: center;
+        margin: 10px 0 0;
+        padding-top: 20px;
+        color: #b1b3b4;
+    }
+
+    .comment-footer {
+        padding-bottom: 25px;
+    }
+
+    .comment-footer h5 {
+        text-align: center;
+        float: none;
+        padding-top: 40px;
+    }
+
+    .article-share {
+        display: block;
+        float: left;
+    }
+
+    .social-button {
+        padding-bottom: 10px;
+    }
+
 }
 
 @media screen and (max-width : 479px ) {
@@ -745,6 +967,48 @@ blockquote{
         padding-left: 40px;
         padding-right: 36px;
     }
+
+     /* Post page styles here */
+
+    .comment-section, .comment-content {
+        padding: 0px 10px 10px 20px;
+    }
+
+    .comment-text{
+        float: none;
+    }
+
+    .comment-section-left {
+         float: none; 
+    }
+
+    .pix-team{
+        position: relative;
+        top: 20px;
+    }
+
+    .shorting{
+        float: left;
+        position: relative;
+        top: 10px;
+    }
+
+    .comment-form {
+        padding: 60px 10px 10px 15px;
+    }
+
+    .comment-form p{
+        padding-bottom: 0px;
+    }
+
+    .comment-image input {
+        width: 75%;
+    }
+
+    .comment-footer h5 {
+        padding-top: 80px;
+    }
+
 }
 
  
