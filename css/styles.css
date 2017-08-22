@@ -290,6 +290,10 @@ blockquote{
     padding-top: 65px;
 }
 
+.page-content{
+    padding: 50px 100px 80px 100px;
+}
+
 /* footer section */
 #footer-nav-bar{
     padding-top: 65px;
@@ -440,6 +444,26 @@ blockquote{
 
 .content-image{
     float: left;
+}
+
+.page-artical{
+    margin-bottom: 120px;
+}
+
+.page-sub-header {
+    color: #000000;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-color: rgb( 238, 238, 238 );
+    padding-bottom: 35px;
+    margin-bottom: 30px;
+
+}
+.page-sub-header h1{
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
+    padding-bottom: 30px;
 }
 
 /* Post page styles here */
@@ -624,20 +648,6 @@ blockquote{
 }
 
  /* Contact page styles here */
-.contact-title {
-    margin: 0px;
-    color: #000000;
-    border-bottom-style: solid;
-    border-bottom-width: 3px;
-    border-color: rgb( 238, 238, 238 );
-    padding-bottom: 40px;
-}
-.contact-title h1{
-    font-size: 40px;
-    line-height: 50px;
-    font-weight: 700;
-    padding-bottom: 30px;
-}
 
 .form-input-half{
     width: 47%;
@@ -685,6 +695,73 @@ input::placeholder, textarea::placeholder {
     padding-top: 20px;
 }
 
+/* Archive page styles here */
+
+.archive-content{
+    padding-bottom: 20px;
+}
+
+.authors h2, .categories h2, .latest-posts h2, .posts-by-month h2 {
+    color: #b2b2b2;
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+.authors span, .categories span, .latest-posts span, .posts-by-month span{
+    display: block;
+    font-size: 17px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #333333;
+    padding-bottom: 16px;
+}
+
+.archive-content-left, .archive-content-right{
+    display: inline-block;
+    width: 47%;
+}
+
+ /* About page styles here */
+
+.about-sub-header{
+    color: #000000;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-color: rgb( 238, 238, 238 );
+    padding-bottom: 25px;
+    margin-bottom: 50px;
+}
+
+.about-sub-header blockquote{
+    font-size: 25px;
+    line-height: 38px;
+    font-style: italic;
+    border: none;
+    padding: unset;
+    color: #7f7f7f;
+}
+
+.search-result span.result-content{
+    display: block;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 400;
+    margin-bottom: 10px;
+
+}
+
+.search-result span.result-count{
+    font-size: 25px;
+    line-height: 38px;
+    font-weight: 400;
+    color: #999999;
+}
+
+.search-content{
+    padding: 60px 100px 50px 100px;
+}
+
 /* Responsive styles here */
 
 @media screen and (max-width : 1439px ) {
@@ -707,6 +784,10 @@ input::placeholder, textarea::placeholder {
     }
 
     /* article section */
+
+    .page-content {
+        padding: 60px 50px 100px 50px;
+    }
 
     article{
         max-width: 1440px;
@@ -904,6 +985,48 @@ input::placeholder, textarea::placeholder {
     .form-input-half{
         width: 100%;
     }
+
+     /* Archive page responsive styles here */
+
+    .archive-content-left, .archive-content-right{
+        display: block;
+        width: auto;
+    }
+
+    /* About page responsive styles here */
+
+    .about-sub-header h1, .page-sub-header h1{
+        font-size: 32px;
+        line-height: 42px;
+        font-weight: bold;
+    }
+
+    .about-sub-header blockquote{
+        font-size: 21px;
+        line-height: 38px;
+    }
+
+    .about-content p{
+        font-size: 18px;
+        line-height: 34px;
+        margin-bottom: 30px;
+    }
+
+    /* Search page responsive styles here */
+
+    .search-result span.result-content{
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .search-result span.result-count{
+        font-size: 21px;
+        line-height: 32px;
+    }
+
+    .search-content{
+        padding: 40px 50px 35px 50px;
+    }
 }
 
 @media screen and (max-width : 479px ) {
@@ -1016,6 +1139,10 @@ input::placeholder, textarea::placeholder {
     .content-image img{
         padding: 40px 0px 45px 30px;
     }
+
+    .page-content {
+        padding: 5px 25px 80px 25px;
+    }
     
     #footer-nav-bar{
         padding-bottom: 30px;
@@ -1044,7 +1171,12 @@ input::placeholder, textarea::placeholder {
         padding-right: 36px;
     }
 
-     /* Post page styles here */
+    .page-sub-header p{
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+     /* Post page responsive styles here */
 
     .comment-section, .comment-content {
         padding: 0px 10px 10px 20px;
@@ -1085,6 +1217,44 @@ input::placeholder, textarea::placeholder {
         padding-top: 80px;
     }
 
+
+    /* About page responsive styles here */
+
+    .about-sub-header h1, .page-sub-header h1{
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .about-sub-header blockquote{
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .about-content p{
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 30px;
+    }
+
+    /* Archive page responsive styles here */
+
+    .authors h2, .categories h2, .latest-posts h2, .posts-by-month h2 { font-size: 21px; }
+
+    .authors span, .categories span, .latest-posts span, .posts-by-month span { font-size: 15px; }
+
+    /* Search page responsive styles here */
+
+    .search-result span.result-content{
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .search-result span.result-count{
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .search-content { padding: 30px 25px 35px 25px; }
 }
 
  
